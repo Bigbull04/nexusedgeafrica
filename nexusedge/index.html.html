@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Edge - Technology Solutions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .navbar {
+            background-color: #1a1a1a;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #00a8ff;
+        }
+
+        .hero {
+            background: url('./nexus_edge_logo.jpg');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #f5f5f5;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 1rem;
+        }
+
+        .about-section {
+            padding: 4rem 2rem;
+            background: #f5f5f5;
+            text-align: center;
+        }
+
+        .about-section h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: #00a8ff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .about-section p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            color: #333;
+            line-height: 1.6;
+            padding: 1rem;
+        }
+
+        .subsidiaries {
+            padding: 4rem 2rem;
+            background: white;
+        }
+
+        .subsidiaries h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #1a1a1a;
+        }
+
+        .subsidiary-cards {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            flex: 1;
+            min-width: 300px;
+            max-width: 400px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            color: #00a8ff;
+            margin-bottom: 1rem;
+        }
+
+        .contact {
+            background: #1a1a1a;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 2rem;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background: #00a8ff;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact-form button:hover {
+            background: #0088cc;
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#subsidiaries">Subsidiaries</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1></h1>
+            <p></p>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h1>NEXUS EDGE</h1>
+        <p>Leading the future of technology with innovative solutions in cloud computing and cybersecurity</p>
+    </section>
+
+    <section id="subsidiaries" class="subsidiaries">
+        <h2>Our Subsidiaries</h2>
+        <div class="subsidiary-cards">
+            <div class="card">
+                <h3>Cloud Edge</h3>
+                <p>Revolutionizing cloud computing with cutting-edge solutions for businesses of all sizes. Our cloud infrastructure ensures scalability, security, and reliability for your digital transformation journey.</p>
+            </div>
+            <div class="card">
+                <h3>Cyber Shield</h3>
+                <p>Providing comprehensive cybersecurity solutions to protect your digital assets. Our advanced security protocols and expert team ensure your business stays protected against evolving cyber threats.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" rows="5" required></textarea>
+            <p>nexusedgeafrica@gmail.com</p><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nexus Edge. All rights reserved.</p>
+    </footer>
+</body>
+</html>
